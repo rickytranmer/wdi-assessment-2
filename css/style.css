@@ -2,7 +2,7 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 section {
-	width: 100vw;
+	width: 100%;
 	height: auto;
 	text-align: center;
 }
@@ -18,10 +18,10 @@ input {
 
 #player1 {
 	background: red;
-	margin: 25vh 0;
+	margin: 25vh -1vw;
 }
 #player2 {
 	background: blue;
-	margin: 25vh 0;
+	margin: 25vh -1vw;
 }
 /*ADD - Media query for tablet*/
