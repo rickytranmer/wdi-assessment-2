@@ -10,18 +10,38 @@ div {
 	width: 10vw;
 	height: 10vh;
 }
-input {
+h1 {
+	font-size: 36px;
+	letter-spacing: 3px;
+	float: left;
+	margin-top: -230px;
+	position: absolute;
+	margin-left: 5vw;
+}
+h1.introHeader {
+	margin-top: initial;
+}
+button {
 	margin: 15vh 15vw;
 	width: 20vw;
-	font-size: : 20rem;
+	height: 20vh;
+	background-color: red;
+	font-size: 36px;
+	letter-spacing: 1.5px;
+}
+button:hover {
+	background-color: green;
+	font-weight: bold;
 }
 
 #player1 {
 	background: red;
 	margin: 25vh -1vw;
+	transition: all .25s ease;
 }
 #player2 {
 	background: blue;
 	margin: 25vh -1vw;
+	transition: all .25s ease;
 }
 /*ADD - Media query for tablet*/

@@ -1,29 +1,39 @@
-//Vanilla JS ONLY
+//----------Vanilla JS ONLY	----------
 var player1Left = 0;
 var player2Left = 0;
 
+const body = document.querySelector('body');
+const theHead = document.querySelector('header');
+const defMargin = '25vh 0 25vh ';
 const player1 = document.getElementById('player1');
 const player2 = document.getElementById('player2');
 
-const defMargin = '25vh 0 25vh ';
+//----------				----------
+//ADD - Change 'ready?' to 'go!' after timeout
+var readyGo = document.createElement('h1');
+readyGo.innerHTML = 'ready?';
+theHead.appendChild(readyGo);
+setTimeout( function() {
+	readyGo.innerHTML = 'GO!';
 
+	// - Add event listener for keyup, hone in on 'F' & 'J' for player inputs
+	document.addEventListener('keyup', function(event) {
+	  const keyName = event.key;
+	  console.log(keyName + ' pressed');
+	  if (keyName === 'f') {	
+	  	console.log(player1);
+	  	movePlayer1();
+	  } else if (keyName === 'j') {	
+	  	console.log(player2);
+	  	movePlayer2();
+	  }
+	});
+}, 2000);
 
 //ADD - Create finish line
 
-//ADD - Add event listeners for two buttons
-document.addEventListener('keyup', function(event) {
-  const keyName = event.key;
-  console.log(keyName + ' pressed');
-  if (keyName === 'f') {	
-  	console.log(player1);
-  	movePlayer1();
-  } else if (keyName === 'j') {	
-  	console.log(player2);
-  	movePlayer2();
-  }
-});
 
-//ADD - Add listener for click on square, alternate movement method
+//ADD - Add listener for click on squares (alternate movement method)
 
 
 //ADD - Move player
