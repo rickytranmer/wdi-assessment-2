@@ -1,5 +1,6 @@
 html {
 	font-family: 'Montserrat', sans-serif;
+	max-height: 100vh;
 }
 section {
 	width: 100%;
@@ -13,14 +14,12 @@ div {
 h1 {
 	font-size: 36px;
 	letter-spacing: 3px;
-	float: left;
-	margin-top: -230px;
-	position: absolute;
 	margin-left: 5vw;
 }
 button {
-	margin: 15vh 15vw;
-	width: 20vw;
+	margin: 8vh 8vw;
+	width: auto;
+	min-width: 20vw;
 	height: 20vh;
 	background-color: red;
 	font-size: 36px;
@@ -29,11 +28,17 @@ button {
 button:hover {
 	background-color: green;
 	font-weight: bold;
+	margin: 7.5vh 8vw;
+	min-width: 21vw;
+	height: 21vh;
 }
-
-
-.introHeader {
-	margin-top: initial;
+footer {
+	text-align: center;
+	max-width: 100%;
+}
+img {
+	margin: 0 20vw;
+	text-align: center;
 }
 
 
@@ -47,4 +52,3 @@ button:hover {
 	margin: 25vh -1vw;
 	transition: all .25s ease;
 }
-/*ADD - Media query for tablet*/
