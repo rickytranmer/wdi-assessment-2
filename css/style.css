@@ -25,7 +25,7 @@ button {
 	font-size: 36px;
 	letter-spacing: 1.5px;
 }
-button:hover {
+button:hover { /* button grows slightly in all directions */
 	background-color: green;
 	font-weight: bold;
 	margin: 7.5vh 8vw;
@@ -41,7 +41,9 @@ img {
 	text-align: center;
 }
 
-
+/* 	-1vw starts on left wall
+	move forward by 5vw
+	18 moves to win 			*/
 #player1 {
 	background: red;
 	margin: 25vh -1vw;
